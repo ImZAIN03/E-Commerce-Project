@@ -10,10 +10,11 @@ import Order from './pages/order/Order';
 import Cart from './pages/cart/Cart';
 import Dashboard from './pages/admin/dashboard/Dashboard';
 import NoPage from './pages/nopage/NoPage';
-import Navbar from './components/navbar/Navbar';
+import MyState from './context/data/myState';
 
 function App() {
   return (
+    <MyState>
     <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
@@ -23,6 +24,8 @@ function App() {
         <Route path="/*" element={<NoPage/>} />
       </Routes>
     </Router>
+    </MyState>
+    
   )
 }
 
