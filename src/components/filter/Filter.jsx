@@ -6,7 +6,7 @@ function Filter() {
     const { mode } = context
 
     return (
-        <div>
+        <div> 
            <div className=' container mx-auto px-4 mt-5 w-5/6'>
                 <div className="p-5 rounded-lg bg-gray-100 drop-shadow-xl border border-gray-200"
                     style={{
