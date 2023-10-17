@@ -21,7 +21,6 @@ function ProductCard() {
                             <div className="p-5 border-t-2">
                                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1" style={{ color: mode === 'dark' ? 'white' : '', }}>E-Commerce</h2>
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3" style={{ color: mode === 'dark' ? 'white' : '', }}>This is title</h1>
-                                {/* <p className="leading-relaxed mb-3">{item.description.}</p> */}
                                 <p className="leading-relaxed mb-3" style={{ color: mode === 'dark' ? 'white' : '' }}>Rs 500</p>
                                 <div className=" flex justify-center">
                                     <button type="button" className="focus:outline-none text-white bg-blue-600 hover:bg-blue-400 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm w-full  py-2">Add To Cart</button>
