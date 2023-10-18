@@ -12,11 +12,12 @@ import Dashboard from './pages/admin/dashboard/Dashboard';
 import NoPage from './pages/nopage/NoPage';
 import MyState from './context/data/myState';
 import Login from './pages/registeration/Login';
-import Signup from './pages/registeration/SignUp';
+import Signup from './pages/registeration/Signup';
 import ProductInfo from './pages/productInfo/ProductInfo';
 import AddProduct from './pages/admin/page/AddProduct';
 import UpdateProduct from './pages/admin/page/UpdateProduct';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <MyState>
@@ -33,6 +34,7 @@ function App() {
         <Route path='updateproduct' element={<UpdateProduct/>}/>
         <Route path="/*" element={<NoPage/>} />
       </Routes>
+      <ToastContainer/>
     </Router>
     </MyState>
     
