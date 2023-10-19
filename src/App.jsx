@@ -39,7 +39,7 @@ function App() {
         <Route path='login' element={<Login/>}/>
         <Route path='signup' element={<Signup/>}/>
         <Route path='productinfo/:id' element={<ProductInfo/>}/>
-        <Route path='addproduct' element={
+        <Route path='/addproduct' element={
           <ProtectedRouteForAdmin>
               <AddProduct/>
           </ProtectedRouteForAdmin> 
